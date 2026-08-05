@@ -1,0 +1,8 @@
+.DS_Store
+Thumbs.db
+*.pptx
+*.pdf
+*.docx
+*.tmp
+work/
+outputs/
