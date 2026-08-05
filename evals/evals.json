@@ -1,0 +1,29 @@
+{
+  "skill_name": "ppt-production-workflow",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "根据我提供的两份课题Word和会议通知截图，制作一份项目汇报PPT，重点说明项目意义、核心目标、数据需求和经费情况。材料里没有的数据不要编，我没有规定时长或页数。",
+      "expected_output": "明确调用ppt-production-workflow、academic-pptx、baoyu-slide-deck和presentations:Presentations；不擅自套用10分钟或固定页数规则，生成来源准确、包含核心目标和演讲者备注、经过逐页QA的可编辑PPTX。",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "我已经手动修改了outputs里的终稿PPT，请以最新修改的那个同名文件为基础，在封面后增加一页核心目标，其他页面一个都不要改。",
+      "expected_output": "明确调用总控、视觉和Presentations相关Skills；识别最新用户修改的PPTX，进行增量编辑，新增目标页，保留其他页面并另存经过一致性检查的版本。",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "把这份15页的技术方案压缩为8分钟汇报，主汇报控制在8到9页，详细字段放附录，并给主汇报页写自然中文讲稿。",
+      "expected_output": "按academic-pptx到baoyu-slide-deck再到presentations:Presentations的顺序重组叙事、优化视觉、控制讲稿时长，并交付通过渲染和溢出检查的可编辑PPTX。",
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "调用ppt-production-workflow帮我制作一份科研项目答辩PPT，并且告诉我本次实际调用了哪些PPT相关Skills。",
+      "expected_output": "在开始和交付时明确披露ppt-production-workflow、academic-pptx、baoyu-slide-deck和presentations:Presentations的调用顺序与各自贡献。",
+      "files": []
+    }
+  ]
+}
